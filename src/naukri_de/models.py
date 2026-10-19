@@ -20,6 +20,7 @@ class NaukriJob:
     skills_tags: List[str]
     description: str
     posted_days_ago: str
+    application_url: str = ""
     source: str = "Naukri"
 
     def to_dict(self) -> Dict[str, Any]:

@@ -40,3 +40,17 @@ def test_parse_record():
     assert "Pune" in job.locations
     assert "Remote" in job.locations
     assert len(job.skills_tags) == 3
+
+
+def test_parse_real_jobs_file():
+    import json
+    from pathlib import Path
+    real_jobs_path = Path(__file__).parent.parent / "data" / "jobs.json"
+    assert real_jobs_path.exists()
+    with open(real_jobs_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    jobs = [NaukriParser.parse_record(r) for r in data]
+    assert len(jobs) >= 20
+    assert any("Amazon" in j.company_name for j in jobs)
+    assert all(bool(j.application_url) for j in jobs)
+

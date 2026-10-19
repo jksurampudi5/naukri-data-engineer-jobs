@@ -76,23 +76,28 @@ class NaukriParser:
 
     @classmethod
     def parse_record(cls, raw: Dict[str, Any]) -> NaukriJob:
-        exp_raw = str(raw.get("experience_raw", ""))
+        exp_raw = str(raw.get("experience_raw") or raw.get("experience") or "")
         exp_min, exp_max = cls.parse_experience(exp_raw)
 
-        salary_raw = str(raw.get("salary_raw", "Not Disclosed"))
+        salary_raw = str(raw.get("salary_raw") or raw.get("salary") or "Not Disclosed")
         sal_min, sal_max = cls.parse_salary(salary_raw)
 
-        loc_raw = str(raw.get("location_raw", ""))
+        loc_raw = str(raw.get("location_raw") or raw.get("location") or "")
         locations = cls.normalize_locations(loc_raw)
 
-        skills = raw.get("skills_tags", [])
+        skills = raw.get("skills_tags") or raw.get("matches") or raw.get("skills") or []
         if isinstance(skills, str):
             skills = [s.strip() for s in skills.split(",") if s.strip()]
 
+        company = str(raw.get("company_name") or raw.get("company") or "").strip()
+        job_id = str(raw.get("job_id") or raw.get("id") or "").strip()
+        description = str(raw.get("summary") or raw.get("description") or "").strip()
+        app_url = str(raw.get("applicationUrl") or raw.get("preferredUrl") or "").strip()
+
         return NaukriJob(
-            job_id=str(raw.get("job_id", "")),
+            job_id=job_id,
             title=str(raw.get("title", "")).strip(),
-            company_name=str(raw.get("company_name", "")).strip(),
+            company_name=company,
             experience_min=exp_min,
             experience_max=exp_max,
             salary_raw=salary_raw,
@@ -100,7 +105,8 @@ class NaukriParser:
             salary_max_lacs=sal_max,
             locations=locations,
             skills_tags=[s.strip() for s in skills if s.strip()],
-            description=str(raw.get("description", "")).strip(),
+            description=description,
             posted_days_ago=str(raw.get("posted_days_ago", "Recent")),
+            application_url=app_url,
             source=str(raw.get("source", "Naukri")),
         )
