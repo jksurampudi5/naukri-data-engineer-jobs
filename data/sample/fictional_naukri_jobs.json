@@ -1,0 +1,74 @@
+[
+  {
+    "job_id": "NAUKRI-MOCK-101",
+    "title": "Senior Data Engineer - PySpark & Databricks",
+    "company_name": "CloudNova Tech Labs",
+    "experience_raw": "3-6 Yrs",
+    "salary_raw": "14-22 Lacs P.A.",
+    "location_raw": "Bangalore/Bengaluru, Hyderabad, Remote",
+    "skills_tags": ["PySpark", "Databricks", "Delta Lake", "Python", "SQL", "Apache Spark"],
+    "description": "We are seeking a Senior Data Engineer with 3+ years in PySpark and Databricks. Experience in Delta Lake optimization and ETL pipeline architecture required.",
+    "posted_days_ago": "2 Days Ago",
+    "source": "Naukri (Fictional Sample)"
+  },
+  {
+    "job_id": "NAUKRI-MOCK-102",
+    "title": "Data Engineer (AWS & Airflow)",
+    "company_name": "StreamLine Analytics Pvt Ltd",
+    "experience_raw": "2-5 Yrs",
+    "salary_raw": "10-16 Lacs P.A.",
+    "location_raw": "Hyderabad/Secunderabad",
+    "skills_tags": ["AWS", "Apache Airflow", "Python", "SQL", "Redshift", "Docker"],
+    "description": "Looking for Data Engineer to build orchestrated DAGs with Airflow and manage analytical warehousing on AWS Redshift and S3.",
+    "posted_days_ago": "1 Day Ago",
+    "source": "Naukri (Fictional Sample)"
+  },
+  {
+    "job_id": "NAUKRI-MOCK-103",
+    "title": "Lead Big Data / Spark Engineer",
+    "company_name": "Quantum Data Systems",
+    "experience_raw": "5-8 Yrs",
+    "salary_raw": "22-35 Lacs P.A.",
+    "location_raw": "Pune, Bangalore",
+    "skills_tags": ["PySpark", "Databricks", "Apache Kafka", "Delta Lake", "Scala", "Kubernetes"],
+    "description": "Lead high-throughput data engineering platform teams building streaming pipelines using Spark Streaming and Kafka clusters.",
+    "posted_days_ago": "Just Now",
+    "source": "Naukri (Fictional Sample)"
+  },
+  {
+    "job_id": "NAUKRI-MOCK-104",
+    "title": "Azure Data Engineer (ADF & Synapse)",
+    "company_name": "InnoWave Solutions",
+    "experience_raw": "3-7 Yrs",
+    "salary_raw": "12-20 Lacs P.A.",
+    "location_raw": "Chennai, Bangalore",
+    "skills_tags": ["Azure Data Factory", "Azure Synapse", "PySpark", "SQL", "Databricks"],
+    "description": "Design and automate batch data workflows using Azure Data Factory (ADF) pipelines and Databricks lakehouse compute.",
+    "posted_days_ago": "3 Days Ago",
+    "source": "Naukri (Fictional Sample)"
+  },
+  {
+    "job_id": "NAUKRI-MOCK-105",
+    "title": "Analytics Engineer - Snowflake & dbt",
+    "company_name": "MetricScale India",
+    "experience_raw": "2-4 Yrs",
+    "salary_raw": "9-15 Lacs P.A.",
+    "location_raw": "Remote / Hyderabad",
+    "skills_tags": ["dbt", "Snowflake", "SQL", "Python", "Git", "Airflow"],
+    "description": "Transform raw analytical tables into clean dimensional models using dbt Core and Snowflake with automated data tests.",
+    "posted_days_ago": "4 Days Ago",
+    "source": "Naukri (Fictional Sample)"
+  },
+  {
+    "job_id": "NAUKRI-MOCK-106",
+    "title": "Data Engineer III (Lakehouse Architecture)",
+    "company_name": "Apex Global Fintech",
+    "experience_raw": "4-7 Yrs",
+    "salary_raw": "18-28 Lacs P.A.",
+    "location_raw": "Bangalore/Bengaluru",
+    "skills_tags": ["PySpark", "Databricks", "Delta Lake", "AWS", "SQL", "Airflow", "Kafka"],
+    "description": "Architect mission-critical financial data pipelines on Databricks Lakehouse with strong partition pruning and streaming SLA guarantees.",
+    "posted_days_ago": "5 Days Ago",
+    "source": "Naukri (Fictional Sample)"
+  }
+]
